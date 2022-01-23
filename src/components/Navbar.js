@@ -4,7 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
   { name: 'Professional Experience', href: '#'},
-  { name: 'Projects', href: '#'},
+  { name: 'Projects', href: '#projects'},
   { name: 'Skills', href: '#skills'},
   { name: 'Contact', href: '#'},
 ]
@@ -33,7 +33,7 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                 <div className="flex-shrink-0 flex items-center">
-                    <a className='text-2xl text-white font-bold' href='/#about'>Utsav Jain</a>
+                    <a className='text-2xl text-white font-bold' href='#about'>Utsav Jain</a>
                     <div className="divide-x-5 text-white"  ></div>
 
                 </div>                
