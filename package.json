@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://utsavvjain.github.io/portfolio",
   "dependencies": {
+    "@headlessui/react": "^1.4.3",
     "@heroicons/react": "^1.0.5",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -17,8 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
