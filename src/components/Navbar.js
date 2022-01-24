@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Projects', href: '#projects'},
   { name: 'Skills', href: '#skills'},
   { name: 'Contact', href: '#'},
+  {name : 'Blogs',href:'https://utsavvjain.hashnode.dev'}
 ]
 
 function classNames(...classes) {

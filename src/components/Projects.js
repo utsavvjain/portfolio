@@ -14,7 +14,7 @@ export default function Projects() {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-4 justify-around">
           {projects.map((project,idx) => (
                         <a href={project.link}>
             <div class="max-w-sm rounded overflow-hidden shadow-sm shadow-gray-600 hover:shadow-gray-600 hover:shadow-xl m-4 " key={project.title}>

@@ -1,6 +1,12 @@
 export const skills=[
     'C++','Python','Java','Spring Boot','React','MySQL','MongoDB','AWS','Oracle','Express','Flask'
 ]
+export const social={
+    github : 'https://github.com/utsavvjain',
+    linkedin : 'https://www.linkedin.com/in/utsavvjain',
+    twitter : 'https://twitter.com/utsav_j05',
+    mail : '"utsavj502@gmail.com"'
+}
 export const projects=[
     {
         link : 'https://github.com/utsavvjain/Chess.in-python',
