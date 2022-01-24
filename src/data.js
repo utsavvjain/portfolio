@@ -11,8 +11,7 @@ export const skills=[
 export const social={
     github : 'https://github.com/utsavvjain',
     linkedin : 'https://www.linkedin.com/in/utsavvjain',
-    twitter : 'https://twitter.com/utsav_j05',
-    mail : 'utsavj502@gmail.com'
+    twitter : 'https://twitter.com/utsav_j05'
 }
 export const projects=[
     {
