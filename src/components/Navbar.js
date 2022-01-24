@@ -37,7 +37,7 @@ export default function Navbar() {
                     <a className='text-2xl text-white font-bold' href='#about'>Utsav Jain</a>
                     <div className="divide-x-5 text-white"  ></div>
 
-                </div>                
+                </div>               
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -55,6 +55,16 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
+              <a
+                        href="#"
+                        className={classNames(
+                           'text-white bg-gray-700 hover:text-white ml-auto',
+                          'px-3 py-2 rounded-md text-sm font-medium'
+                        )}
+                      >
+                      Resume 
+                      </a>
+
             </div>
           </div>
 
@@ -78,6 +88,7 @@ export default function Navbar() {
           </Disclosure.Panel>
         </>
       )}
+      
     </Disclosure>
   )
 }
