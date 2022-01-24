@@ -3,7 +3,7 @@ import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Professional Experience', href: '#'},
+  { name: 'Professional Experience', href: '#experience'},
   { name: 'Projects', href: '#projects'},
   { name: 'Skills', href: '#skills'},
   { name: 'Contact', href: '#'},

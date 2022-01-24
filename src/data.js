@@ -54,3 +54,31 @@ export const projects=[
         tStack : ['Python','tkinter','OpenCV','image processing']
     }
 ]
+export const experiences=[
+    {
+        name : "Thrilleasy Private Limited",
+        role : "Full stack developer",
+        start : "Oct 2021",
+        end : "Jan 2022",
+        description : [
+            "Designed and implemented portal which was used by employees of the company",
+            "Worked on spring security and OAuth2 to secure portal and enable role based to access the resources",
+            "Created REST API's which was consumed by both web and portal and integreated mongo db atlas using spring-data",
+            "Created dynamic web pages using thymeleaf from static html files",
+            "Integreated Google API for accessing buckets and user groups"
+        ]
+    },
+    {
+        name : "Thrilleasy Private Limited",
+        role : "Java developer intern",
+        start : "Aug 2021",
+        end : "Oct 2021",
+        description : [
+            "Created RESTful and non RESTful API's on spring boot which was consumed by front end",
+            "Worked on mongoDB and integrating data from various backend services as well as the database.",
+            "Worked on thymeleaf to make dynamic pages",
+            "Implemented unit testing for the corresponding services"
+        ]
+    }
+
+]
