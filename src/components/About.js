@@ -1,5 +1,3 @@
-
-
 export default function About() {
     return (
       <section id="about">
@@ -28,7 +26,7 @@ export default function About() {
             <img
               className="rounded-full shadow-sm"
               alt="display-picture"
-              src="display-picture.jpeg"
+              src="images/avatar.jpeg"
             />
           </div>
         </div>

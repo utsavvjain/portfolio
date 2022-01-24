@@ -6,7 +6,7 @@ const navigation = [
   { name: 'Professional Experience', href: '#experience'},
   { name: 'Projects', href: '#projects'},
   { name: 'Skills', href: '#skills'},
-  { name: 'Contact', href: '#'},
+  { name: 'Contact', href: '#contact'},
   {name : 'Blogs',href:'https://utsavvjain.hashnode.dev'}
 ]
 
