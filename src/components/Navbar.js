@@ -61,7 +61,7 @@ export default function Navbar() {
                            'text-white bg-gray-700 hover:text-white ml-auto',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
-                      >
+                      >                       
                       Resume 
                       </a>
 
@@ -81,6 +81,8 @@ export default function Navbar() {
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
+                    <div class="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900"></div>
+
                   {item.name}
                 </Disclosure.Button>
               ))}
