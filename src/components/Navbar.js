@@ -1,7 +1,6 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-
+import {user} from '../data'
 const navigation = [
   { name: 'Professional Experience', href: '#experience'},
   { name: 'Projects', href: '#projects'},
@@ -56,7 +55,7 @@ export default function Navbar() {
                 </div>
               </div>
               <a
-                        href="#"
+                        href={user.resume}
                         className={classNames(
                            'text-white bg-gray-700 hover:text-white ml-auto',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -81,8 +80,6 @@ export default function Navbar() {
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                    <div class="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900"></div>
-
                   {item.name}
                 </Disclosure.Button>
               ))}
