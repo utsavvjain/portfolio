@@ -4,7 +4,7 @@ export const user = {
     contactNumber: '9893158480',
     address: "Sethi nagar, Ujjain",
     mail: 'utsavj502@gmail.com',
-    resume: 'https://drive.google.com/file/d/1s5hxot3TirvJktL2vu2BzeMcp3kVx_ga/view?usp=sharing'
+    resume: 'https://drive.google.com/file/d/1EcktfBS0x9T7IwyiDrzCSUanAtdWmBgT/view?usp=sharing'
 }
 export const skills = [
     'C++', 'Python', 'Java', 'Spring Boot', 'React', 'MySQL', 'MongoDB', 'AWS', 'Oracle', 'Express', 'Flask'
@@ -19,7 +19,7 @@ export const projects = [
         link: 'https://github.com/utsavvjain/Chess.in-python',
         image: 'images/chess.jpg',
         title: 'Chess.in',
-        description: 'Chess.in is a multiplayer chess game which allows user to play chess with his/her friends over a local area network. ',
+        description: 'Chess.in is a multiplayer chess game that allow users to play chess with there friends on seprate machines',
         tStack: ['python', 'network programming', 'tkinter']
 
     },
@@ -27,7 +27,7 @@ export const projects = [
         link: 'https://github.com/utsavvjain/Katlina-Web-Server',
         image: 'images/katlina.png',
         title: 'Katlina Web Server',
-        description: 'Katlina is a web server designed and implemented in c/c++ targeted to facilitate users using c/c++ for backend development',
+        description: 'Katlina is a web server designed and implemented in c/c++ targeted to facilitate users using c/c++ for web-application development',
         tStack: ['C++', 'network programming']
 
     },
@@ -35,7 +35,7 @@ export const projects = [
         link: 'https://github.com/utsavvjain/WebRock-A-WebService-Framework',
         image: 'images/web-rock.png',
         title: 'WebRock - A J2EE Web framework',
-        description: 'WebRock is a J2EE based framework which reduces the hassle of server side programming.',
+        description: 'WebRock is a J2EE based framework that reduces the hassle of server side programming in Java.',
         tStack: ['Java', 'J2EE', 'tomcat9', 'Javascript']
 
     },
@@ -69,9 +69,9 @@ export const experiences = [
         end: "Jan 2022",
         description: [
             "Designed and implemented portal which was used by employees of the company",
-            "Worked on spring security and OAuth2 to secure portal and enable role based to access the resources",
+            "Worked on spring security and OAuth2 to secure portal and enable role-based to access the resources",
             "Created REST API's which was consumed by both web and portal and integrated mongo db atlas using spring-data",
-            "Created dynamic web pages using thymeleaf from static html files",
+            "Created dynamic web pages using thymeleaf from static HTML files",
             "integrated Google API for accessing buckets and user groups"
         ]
     },
@@ -81,7 +81,7 @@ export const experiences = [
         start: "Aug 2021",
         end: "Oct 2021",
         description: [
-            "Created RESTful and non RESTful API's on spring boot which was consumed by front end",
+            "Created RESTful and non-RESTful API's on spring boot which was consumed by front end",
             "Worked on mongoDB and integrated data from various backend services as well as the database.",
             "Implemented unit testing for the services"
         ]
