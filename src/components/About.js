@@ -12,11 +12,13 @@ export default function About() {
             <div className="flex justify-center">
               <a
                 href="#contact"
+                onClick={(ev) => { ev.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}
                 className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
                 Lets connect
               </a>
               <a
                 href="#projects"
+                onClick={(ev) => { ev.preventDefault(); document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }); }}
                 className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                 See My Past Work
               </a>

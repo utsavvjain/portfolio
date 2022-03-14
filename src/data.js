@@ -69,7 +69,7 @@ export const experiences = [
         end: "Jan 2022",
         description: [
             "Designed and implemented portal which was used by employees of the company",
-            "Worked on spring security and OAuth2 to secure portal and enable role-based to access the resources",
+            "Worked on spring security and OAuth2 to secure portal and enable role-based authorization for accessing the resources",
             "Created REST API's which was consumed by both web and portal and integrated mongo db atlas using spring-data",
             "Created dynamic web pages using thymeleaf from static HTML files",
             "integrated Google API for accessing buckets and user groups"
