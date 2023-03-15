@@ -1,15 +1,15 @@
-import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import { user } from '../data'
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { user } from "../data";
 const navigation = [
-  { name: 'Professional Experience', href: '#experience' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Contact', href: '#contact' }
-]
+  { name: "Professional Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
+  { name: "Contact", href: "#contact" },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
@@ -33,10 +33,17 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                 <div className="flex-shrink-0 flex items-center">
                   <a
-                    className='text-2xl text-white font-bold'
-                    href='#about'
-                    onClick={(ev) => { ev.preventDefault(); document.getElementById('about').scrollIntoView({ behavior: 'smooth' }); }}
-                  >Utsav Jain</a>
+                    className="text-2xl text-white font-bold"
+                    href="#about"
+                    onClick={(ev) => {
+                      ev.preventDefault();
+                      document
+                        .getElementById("about")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
+                  >
+                    Utsav Jain
+                  </a>
                   <div className="divide-x-5 text-white"></div>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
@@ -45,21 +52,28 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
-                        onClick={(ev) => { ev.preventDefault(); document.getElementById(item.href.slice(1)).scrollIntoView({ behavior: 'smooth' }); }}
+                        onClick={(ev) => {
+                          ev.preventDefault();
+                          document
+                            .getElementById(item.href.slice(1))
+                            .scrollIntoView({ behavior: "smooth" });
+                        }}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          item.current
+                            ? "bg-gray-900 text-white"
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          "px-3 py-2 rounded-md text-sm font-medium"
                         )}
                       >
                         {item.name}
                       </a>
                     ))}
                     <a
-                      key='blogs'
-                      href='https://utsavvjain.hashnode.dev'
+                      key="blogs"
+                      href="https://utsavvjain.hashnode.dev"
                       className={classNames(
-                        'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'px-3 py-2 rounded-md text-sm font-medium'
+                        "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        "px-3 py-2 rounded-md text-sm font-medium"
                       )}
                     >
                       Blogs
@@ -70,13 +84,12 @@ export default function Navbar() {
               <a
                 href={user.resume}
                 className={classNames(
-                  'text-white bg-gray-700 hover:text-white ml-auto',
-                  'px-3 py-2 rounded-md text-sm font-medium'
+                  "text-white bg-gray-700 hover:text-white ml-auto",
+                  "px-3 py-2 rounded-md text-sm font-medium"
                 )}
               >
                 Resume
               </a>
-
             </div>
           </div>
 
@@ -84,40 +97,44 @@ export default function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <div
-                  onClick={(ev) => { ev.preventDefault(); document.getElementById(item.href.slice(1)).scrollIntoView({ behavior: 'smooth' }); }}
+                  onClick={(ev) => {
+                    ev.preventDefault();
+                    document
+                      .getElementById(item.href.slice(1))
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
                 >
                   <Disclosure.Button
                     key={item.name}
                     as="a"
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'block px-3 py-2 rounded-md text-base font-medium'
+                      item.current
+                        ? "bg-gray-900 text-white"
+                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "block px-3 py-2 rounded-md text-base font-medium"
                     )}
-                    aria-current={item.current ? 'page' : undefined}
+                    aria-current={item.current ? "page" : undefined}
                   >
-
                     {item.name}
                   </Disclosure.Button>
                 </div>
               ))}
               <Disclosure.Button
-                key='blogs'
+                key="blogs"
                 as="a"
-                href='https://utsavvjain.hashnode.dev'
+                href="https://utsavvjain.hashnode.dev"
                 className={classNames(
-                  'text-gray-300 hover:bg-gray-700 hover:text-white',
-                  'block px-3 py-2 rounded-md text-base font-medium'
+                  "text-gray-300 hover:bg-gray-700 hover:text-white",
+                  "block px-3 py-2 rounded-md text-base font-medium"
                 )}
                 aria-current={undefined}
               >
                 Blogs
               </Disclosure.Button>
-
             </div>
           </Disclosure.Panel>
         </>
       )}
-
     </Disclosure>
-  )
+  );
 }
