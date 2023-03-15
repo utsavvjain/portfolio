@@ -63,6 +63,15 @@ export const projects = [
 ]
 export const experiences = [
     {
+        name: "Zomato",
+        role: "SDE Intern",
+        start: "Dec 2022",
+        end: "",
+        description: [
+            "Just started working will update soon"
+        ]
+    },
+    {
         name: "Thrilleasy Private Limited",
         role: "Full stack developer",
         start: "Oct 2021",
