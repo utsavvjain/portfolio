@@ -2,7 +2,7 @@ import { social } from "../data";
 export default function Footer() {
   return (
     <footer class="text-center bg-gray-800 text-white">
-      <div class="container px-6 pt-6">
+      <div class=" px-6 pt-6">
         <div class="flex justify-center mb-6">
           <a
             href={social.github}
@@ -91,7 +91,7 @@ export default function Footer() {
           </svg>
           &nbsp;by Utsav Jain
         </span>
-        © 2022 Copyright
+        <div class="flex justify-center">© 2022 Copyright</div>
         <br />
       </div>
     </footer>
